@@ -1,0 +1,23 @@
+p {
+    background-color: antiquewhite;
+    color: lightpink;
+}
+
+#para1{
+    background: antiquewhite;
+    color:darkolivegreen;
+}
+
+.center{
+    color:dimgray;
+    text-align: center;
+}
+
+h,p,span{
+    color:mediumvioletred;
+    text-align: center;
+}
+
+body {
+background-color:antiquewhite;
+}

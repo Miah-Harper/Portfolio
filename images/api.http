@@ -1,0 +1,4 @@
+GET https://dog-facts2.p.rapidapi.com/facts
+
+###
+POST http://127.0.0.1:5500/

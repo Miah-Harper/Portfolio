@@ -1,0 +1,21 @@
+var client = new HttpClient();
+var request = new HttpRequestMessage
+{
+	Method = HttpMethod.Get,
+	RequestUri = new Uri("https://dog-facts2.p.rapidapi.com/facts"),
+	Headers =
+	{
+		{ "X-RapidAPI-Key", "0574627320mshbb291becd61b2f8p1f3672jsnf39aa4b57a0e" },
+		{ "X-RapidAPI-Host", "dog-facts2.p.rapidapi.com" },
+	},
+};
+using (var response = await client.SendAsync(request))
+{
+	response.EnsureSuccessStatusCode();
+	var body = await response.Content.ReadAsStringAsync();
+	Console.WriteLine(body);
+    var dogQuotes = client.GetStringAsync(RequestUri).Result;
+    var dog = JObject.Prase(dogQuotes).GetValue("quote").ToString();
+    return dog;
+}
+

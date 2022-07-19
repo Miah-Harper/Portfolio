@@ -1,23 +1,60 @@
-p {
-    background-color: antiquewhite;
-    color: lightpink;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#para1{
-    background: antiquewhite;
-    color:darkolivegreen;
+html{
+    font-size: 12px;
+
 }
+
+body{
+    background-image: url(https://tinypic.host/images/2022/07/08/clouds.jpg);
+    background-size: cover;
+    font-family: 'Roboto Slab';
+  
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 3rem;
+    margin-top: 4rem;
+    text-align: center;
+
+}
+
+p {
+
+    color: lightgrey;
+    text-align: center;
+}
+
 
 .center{
-    color:dimgray;
+    color: lightgray(189, 18, 18);
     text-align: center;
 }
 
 h,p,span{
-    color:mediumvioletred;
-    text-align: center;
+    color: black;
+    display: inline-block;
+    vertical-align: top;
+
+   
 }
 
-body {
-background-color:antiquewhite;
+.picture {
+    border: 1px solid lightgray;
 }
+
+
+  p{
+      display: inline;
+  }
+
+  

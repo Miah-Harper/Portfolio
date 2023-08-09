@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #000000;
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    background-color: #D0E1F9;
+    width: 80%;
+    max-width: 1000px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+}
+
+header {
+    color: #333;
+    padding: 20px;
+    text-align: left;
+}
+
+section {
+    background-color: #F0EAD6;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+}
+
+.profile-picture {
+    border-radius: 50%; /* make the image round */
+    display: block;
+}
+
+.picture-container {
+    display: inline-block;
+    border: 2px solid #F0EAD6;
+    padding: 5px;
+    background-color: #F0EAD6;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.specialization{
+    color: #268bd2;
+    padding: 10px;
+    text-align: left;
+}
+
+h1, h2, h3 {
+    color: #2e2d2d;
+}
+
+a {
+    color: #268bd2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}

@@ -3,55 +3,120 @@
 
 <head>
     <link rel="stylesheet" href="styles.css">
-    <meta charset="UTF-8">
+    <!-- <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miah Harper - Software Engineer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 </head>
+<!-- navbar -->
+<nav class="navbar">
+    <ul class="link-group">
+        <li class="link active"><a href="#">home</a></li>
+        <li class="link"><a href="#">projects</a></li>
+        <li class="link"><a href="#">about</a></li>
+        <li class="link"><a href="#">contact</a></li>
+    </ul>
+</nav>
+<!-- home section -->
 
-<body>
-    <div class="container">
-        <header>
-            <h1>Graham Galloway</h1>
-            <div class="picture-container">
-                <img class="profile-picture" src="headshot.jpeg" alt="Miah's headshot" width="200" height="230">
+<section class="home-section active">
+    <h1 class="hero-heading">Miah Harper,<br> Software Engineer</h1>
+    <img src="images/headshot.jpeg" class="home-img" alt="">
+</section>
+
+<!-- project section -->
+
+<section class="project-section active">
+    <h1 class="project-heading">some of my projects</h1>
+    <div class="project-container">
+        <div class="project-card">
+            <img src="img/project-1.png" class="project-img" alt="">
+            <div class="project-content">
+                <h1 class="project-title">project 01</h1>
+                <p class="project-info">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit vitae delectus cumque repudiandae aliquam optio accusamus natus nobis! Nam, sunt?
+                </p>
+                <div class="project-btn-grp">
+                    <button class="project-btn github">github repo</button>
+                </div>
             </div>
-            <div class="specialization">
-                <h2>Specialized in C#, AI Integration in Software Development</h2>
-            </div>
-        </header>
+        </div>
         
-    </header>
-
-    <section>
-        <h2>Skills</h2>
-        <p>C#, SQL, ASP.NET, HTML, CSS, JavaScript, Debugging and Testing, System Designing, Project Management, AI Integration in Software Development</p>
-    </section>
-
-    <section>
-        <h2>Work Experience & Projects</h2>
-        <h3>TacoParser</h3>
-        <p>Developed a C# program to parse Taco Bell locations across the country and identify the two farthest apart locations. Employed .NET for software development and utilized unit testing and test-driven development methodologies.</p>
-        <!--Add the rest of the projects in a similar way-->
-    </section>
-
-    <section>
-        <h2>Education</h2>
-        <h3>TrueCoders: Advanced Technical Training</h3>
-        <p>Birmingham, Alabama, July 2022 - July 2023. Received hands-on training in programming languages including SQL, C#, .NET Core, Java, Git, ASP.NET MVC, HTML, CSS, and JavaScript. Developed multiple C# and SQL projects using Visual Studio and Visual Studio Code. Gained experience in Git and GitHub for source control and SQL databases management using CRUD operations in MySQL.</p>
-    </section>
-
-    <section>
-        <h2>Contact Me</h2>
-        <ul>
-            <li>Email: Graham@yahoo.com</li>
-            <li>Phone: 555-555-5555</li>
-            <li>Github: <a href="https://github.com/Grahamgg">Grahamgg</a></li>
-            <li>LinkedIn: <a href="linkedin.com/in/graham-galloway-9a36a89b/">Graham Galloway</a></li>
-            <li>Codewars: <a href="https://www.codewars.com/users/grahamgg">Grahamgg</a></li>
-        </ul>
-    </section>
+        // +3 more cards
     </div>
-</body>
-</html>
+    <section class="project-section active">
+    </section>
+    </section>
+   
+<!-- about section -->
+<section class="about-section">
+    <div class="about">
+        <div class="about-img-container">
+            <img src="img/home.png" class="about-img" alt="">
+            <button class="download-cv-btn">downlaod cv</button>
+        </div>
+        <p class="about-info">Lorem ipsum.....</p>
+    </div>
+   
+</section>
+<!-- skills -->
+<div class="skill-section">
+    <h1 class="heading">skills</h1>
+    <div class="skills-container">
+        <div class="skill-card">
+            <img src="images/c.png" class="skill-img" alt="">
+            <h1 class="skill-name">C#</h1>
+            <!-- <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p> -->
+        </div>
+        <div class="skills-container">
+            <div class="skill-card">
+                <img src="images/sql.png" class="skill-img" alt="">
+                <h1 class="skill-name">SQL</h1>
+                <!-- <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p> -->
+            </div>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <img src="images/mysql.png" class="skill-img" alt="">
+                    <h1 class="skill-name">ASP.NET MVC</h1>
+                    <!-- <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p> -->
+                </div>
+            </div>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <img src="images/mvc.png" class="skill-img" alt="">
+                    <h1 class="skill-name">ASP.NET MVC</h1>
+                    <!-- <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p> -->
+                </div>
+                
+            </div>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <img src="images/csm.png" class="skill-img" alt="">
+                    <h1 class="skill-name">Agile: Certified Scrum Master</h1>
+                    <!-- <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p> -->
+                </div>
+               
 
+ <!-- timeline -->
+ <!-- <div class="timeline">
+    <h1 class="heading">education and experience</h1>
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title">2000-2002</h1>
+            <p class="card-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto sequi recusandae laborum ipsam dignissimos nostrum vitae provident officia, consectetur ab accusantium corrupti exercitationem temporibus repellat non magni cupiditate ea reprehenderit.</p>
+        </div>
+    </div>
+    //+4 more cards
+</div> -->
+
+<!-- contact section -->
+<section class="contact-section">
+    <form class="contact-form">
+        <input type="text" name="name" id="name" autocomplete="off" placeholder="name">
+        <input type="text" name="email" id="email" autocomplete="off" placeholder="email">
+        <textarea name="msg" id="msg" placeholder="message" autocomplete="off"></textarea>
+        <button type="submit" class="form-submit-btn">contact</button>
+    </form>
+   
+
+
+</html>

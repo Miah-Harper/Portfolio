@@ -3,10 +3,12 @@
 
 <head>
     <link rel="stylesheet" href="styles.css">
-    <!-- <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-</head>
+    <!-- <script src="app.js"></script> -->
+    <!-- <link rel="appjs" href="app.js">     -->
+        <!-- <meta charset="UTF-8"> 
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head> -->
 <!-- navbar -->
 <nav class="navbar">
     <ul class="link-group">
@@ -16,6 +18,7 @@
         <li class="link"><a href="#">contact</a></li>
     </ul>
 </nav>
+
 <!-- home section -->
 
 <section class="home-section active">
@@ -24,40 +27,80 @@
 </section>
 
 <!-- project section -->
-
 <section class="project-section active">
     <h1 class="project-heading">some of my projects</h1>
     <div class="project-container">
         <div class="project-card">
-            <img src="img/project-1.png" class="project-img" alt="">
+            <img src="images/citybones.png" class="project-img" alt="">
             <div class="project-content">
                 <h1 class="project-title">project 01</h1>
                 <p class="project-info">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit vitae delectus cumque repudiandae aliquam optio accusamus natus nobis! Nam, sunt?
                 </p>
                 <div class="project-btn-grp">
-                    <button class="project-btn github">github repo</button>
+                    <button class="project-btn github" onclick ="window.open('https://github.com/Miah-Harper/CityBonesWebApp', '_blank')" >Best Buy Mock Database</button>
+                    
                 </div>
             </div>
         </div>
-        
-        // +3 more cards
+        <div class="project-card">
+            <img src="images/bestbuy.png" class="project-img" alt="">
+            <div class="project-content">
+                <h1 class="project-title">project 01</h1>
+                <p class="project-info">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit vitae delectus cumque repudiandae aliquam optio accusamus natus nobis! Nam, sunt?
+                </p>
+                <div class="project-btn-grp">
+                    <button class="project-btn github" onclick ="window.open('https://github.com/Miah-Harper/BestBuy', '_blank')" >Best Buy Mock Database</button>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="images/taco.png" class="project-img" alt="">
+            <div class="project-content">
+                <h1 class="project-title">project 01</h1>
+                <p class="project-info">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit vitae delectus cumque repudiandae aliquam optio accusamus natus nobis! Nam, sunt?
+                </p>
+                <div class="project-btn-grp">
+                    
+                    <button class="project-btn github" onclick ="window.open('https://github.com/Miah-Harper/TacoParser', '_blank')" >Taco Parser</button>
+                </div>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="images/api.png" class="project-img" alt="">
+            <div class="project-content">
+                <h1 class="project-title">project 01</h1>
+                <p class="project-info">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit vitae delectus cumque repudiandae aliquam optio accusamus natus nobis! Nam, sunt?
+                </p>
+                <div class="project-btn-grp">
+                    <button class="project-btn github" onclick ="window.open('https://github.com/Miah-Harper/Kanyewest', '_blank')" >Kanye VS Ron Swanson</button>
+                    
+                </div>
+            </div>
+        </div>
     </div>
     <section class="project-section active">
+        <script src="app.js"></script>
     </section>
-    </section>
+</section>
    
 <!-- about section -->
+
 <section class="about-section">
     <div class="about">
         <div class="about-img-container">
-            <img src="img/home.png" class="about-img" alt="">
-            <button class="download-cv-btn">downlaod cv</button>
+            <img src="images/resume.png" class="about-img" alt="">
+            <button class="download-cv-btn" id="download-cv">download cv</button>
         </div>
         <p class="about-info">Lorem ipsum.....</p>
     </div>
-   
-</section>
+</section> 
+ <script src="app.js"></script> 
+
 <!-- skills -->
 <div class="skill-section">
     <h1 class="heading">skills</h1>
@@ -96,27 +139,17 @@
                 </div>
                
 
- <!-- timeline -->
- <!-- <div class="timeline">
-    <h1 class="heading">education and experience</h1>
-    <div class="card">
-        <div class="card-body">
-            <h1 class="card-title">2000-2002</h1>
-            <p class="card-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto sequi recusandae laborum ipsam dignissimos nostrum vitae provident officia, consectetur ab accusantium corrupti exercitationem temporibus repellat non magni cupiditate ea reprehenderit.</p>
-        </div>
-    </div>
-    //+4 more cards
-</div> -->
 
 <!-- contact section -->
 <section class="contact-section">
     <form class="contact-form">
+        <img src
         <input type="text" name="name" id="name" autocomplete="off" placeholder="name">
         <input type="text" name="email" id="email" autocomplete="off" placeholder="email">
         <textarea name="msg" id="msg" placeholder="message" autocomplete="off"></textarea>
         <button type="submit" class="form-submit-btn">contact</button>
     </form>
    
-
+</section>
 
 </html>

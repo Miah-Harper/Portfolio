@@ -402,15 +402,15 @@ body{
 
 /* timeline */
 
-.timeline{
+/* .timeline{
     display: block;
     width: 80%;
     margin: 150px auto;
-}
+} */
 
 /* Contact section */
 
-.contact-section{
+/* .contact-section{
     position: absolute;
     top: 0;
     opacity: 0;
@@ -455,5 +455,5 @@ body{
     border: none;
     border-radius: 10px;
     cursor: pointer;
-}
+} */
 

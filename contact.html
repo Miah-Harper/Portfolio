@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <link rel="stylesheet" href="form.css"> 
+     <script src="form.css"></script> 
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- navbar -->
+<nav class="navbar">
+    <ul class="link-group">
+        <li class="link active"><a href="index.html">home</a></li>
+        <li class="link"><a href="projects.html">projects</a></li>
+        <li class="link"><a href="aboutme.html">about</a></li>
+        <li class="link"><a href="contact.html">contact</a></li>
+    </ul>
+</nav>
+
+    <!---modify this form HTML and place wherever you want your form-->
+    <!-- <form action="https://formspree.io/f/mnqkpzzv" method="POST">
+      <label>
+        Your email:
+        <input type="email" name="email" class="email-address"/>
+      </label>
+      <label>
+        Your message:
+        <textarea name="message"></textarea>
+      </label>  -->
+      <!-- your other form fields go here -->
+     <!-- <button type="submit">Send</button> -->
+      
+    <!-- </form>  -->
+        <!-- Contact -->
+				<article id="contact">
+					<h2 class="major">Contact</h2>
+					<form action="https://formspree.io/f/xeqbaeqa"
+						  method="post">
+						<div class="fields">
+							<div class="field half">
+								<label for="name">Name</label>
+								<input type="text" name="name" id="name" />
+							</div>
+							<div class="field half">
+								<label for="email">Email</label>
+								<input type="text" name="email" id="email" />
+							</div>
+							<div class="field">
+								<label for="message">Message</label>
+								<textarea name="message" id="message" rows="4"></textarea>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Send Message" class="primary" /></li>
+							<li><input type="reset" value="Reset" /></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/robert-e-rogers-the2nd/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/rerogers2" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</form>
+				</article>
+  </body>
+</html>

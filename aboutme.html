@@ -1,43 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="app.js">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
 
-<!-- <div class="about-section">
-    <h1>About Us Page</h1>
-    <p>Some text about who we are and what we do.</p>
-    <p>Resize the browser window to see that this page is responsive by the way.</p>
-  </div> -->
-  
-  <h2 style="text-align:center"></h2>
-  <div class="row">
-    <div class="column">
-      <div class="card">
-        <img src="images/headshot.jpeg" alt="Jane" style="width:100%">
-        <div class="container">
-          <h2>Miah Harper</h2>
-          <p class="title">CEO & Founder</p>
-          <p><br>Young and dedicated Software Engineer,
-            <br>skilled in C#, SQL, and ASP.NET MVC. 
-            <br>Embracing the world of tech with a fresh perspective. 
-            <br>Committed to mastering my craft 
-            <br>and creating impactful solutions.</p>
-          <p></p>
-          <!-- <p><button class="button" href="contact.html">Contact Me</button></p> -->
-          <button class="button"  onclick="window.location.href='contact.html';">
-            Contact Me
-          </button>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>About Me Profile card || Learning Robo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  </head>
+  <body>
+    <!-- navbar -->
+<nav class="navbar">
+    <ul class="link-group">
+        <li class="link active"><a href="index.html">home</a></li>
+        <li class="link"><a href="projects.html">projects</a></li>
+        <li class="link"><a href="aboutme.html">about</a></li>
+        <li class="link"><a href="contact.html">contact</a></li>
+    </ul>
+</nav>
+    <div class = "about-wrapper">
+      <div class = "about-left">
+        <div class = "about-left-content">
+          <div>
+            <div class = "shadow">
+              <div class = "about-img">
+                <img src = "images/headshot.jpeg" alt = "about image">
+              </div>
+            </div>
+
+            <h2>Miah Harper</h2>
+            <h3>Software Engineer</h3>
+          </div>
+
+          <ul class = "icons">
+            <li><a href="https://www.linkedin.com/in/miahharper/" target="_blank"> <i class = "fab fa-linkedin"></i></a></li>
+           
+          </ul>
         </div>
+        
+      </div>
+
+      <div class = "about-right">
+        <h1>About Me<span>!</span></h1>
+        <h2></h2>
+        <div class = "about-para">
+            <p><br>Young and dedicated Software Engineer,
+                skilled in C#, SQL, and ASP.NET MVC. 
+                Embracing the world of tech with a fresh perspective. 
+                Committed to mastering my craft 
+                and creating impactful solutions.</p>
+          </div>
+        <div class = "about-btns">
+            <a href="images/MiahHarperResume.pdf" download="MiahHarperResume">
+          <button type = "button" class = "btn btn-pink">resume / CV</button>
+        </a>
+        <a href="https://github.com/Miah-Harper" target="_blank" class="btn btn-white">GitHub</a>
+        </div>
+
+      
       </div>
     </div>
-  
-  
-  </div>
-  
-
+  </body>
 </html>

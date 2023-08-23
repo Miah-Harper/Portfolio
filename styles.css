@@ -12,6 +12,7 @@ body{
     min-height: 100vh;
     background: #191919;
     font-family: sans-serif;
+    background-image: url('images/wallpaper.jpg');
 }
 
 .navbar{
@@ -95,7 +96,7 @@ body{
     z-index: 8;
 }
 
-/* project-section */
+project-section
 
 .project-section-active{
     width: 100%;
@@ -399,61 +400,4 @@ body{
     border-color: #4fdfff;
     color: #4fdfff;
 } 
-
-/* timeline */
-
-/* .timeline{
-    display: block;
-    width: 80%;
-    margin: 150px auto;
-} */
-
-/* Contact section */
-
-/* .contact-section{
-    position: absolute;
-    top: 0;
-    opacity: 0;
-    transition: 1s;
-    padding: 100px 150px;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50px;
-}
-
-
-.contact-form input, .contact-form textarea{
-    width: 100%;
-    height: 40px;
-    background: rgba(255, 255, 255, 0.2);
-    border: 1px solid #fff;
-    margin-bottom: 30px;
-    border-radius: 5px;
-    text-transform: capitalize;
-    color: #fff;
-    padding: 5px 10px;
-}
-
-::placeholder{
-    color: #fff;
-}
-
-#msg{
-    height: 280px;
-    resize: none;
-    font-family: sans-serif;
-}
-
-.form-submit-btn{
-    background: #ff4f4f;
-    color: #fff;
-    text-transform: capitalize;
-    padding: 15px 40px;
-    display: block;
-    margin: auto;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-} */
 

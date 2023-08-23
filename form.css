@@ -1,208 +1,74 @@
-/* body{
-    width: 100%;
-    max-width: 1400px;
-    display: block;
-    margin: auto;
-    min-height: 100vh;
-    background: #191919;
-    font-family: sans-serif;
-} */
-
-.navbar{
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9;
-    background: #1a1a1a;
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('/images/backgroundpic2.jpg');
+  background-size:cover;
+  background-repeat:no-repeat;
+  object-fit:contain;
+  color:white;
 }
 
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 20px;
+}
+
+form {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #222;
+}
+
+
+
+
 .link-group{
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 
 .link a{
-    color: #fff;
-    opacity: 0.5;
-    text-decoration: none;
-    text-transform: capitalize;
-    padding: 10px 30px;
-    margin: 0 20px;
-    line-height: 80px;
-    transition: .5s;
-    font-size: 20px;
+  color: #fff;
+  opacity: 0.5;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 10px 30px;
+  margin: 0 20px;
+  line-height: 80px;
+  transition: .5s;
+  font-size: 20px;
 }
 
 .link a:hover, .link.active a{
-    opacity: 1;
+  opacity: 1;
 }
-
-email-address{
-    text-align: center;
-}
-
-/* Icons */
-
-ul.icons {
-    cursor: default;
-    list-style: none;
-    padding-left: 0;
-}
-
-    ul.icons li {
-        display: inline-block;
-        padding: 0 0.75em 0 0;
-    }
-
-        ul.icons li:last-child {
-            padding-right: 0;
-        }
-
-        ul.icons li a {
-            border-radius: 100%;
-            box-shadow: inset 0 0 0 1px #ffffff;
-            display: inline-block;
-            height: 2.25rem;
-            line-height: 2.25rem;
-            text-align: center;
-            width: 2.25rem;
-        }
-
-            ul.icons li a:hover {
-                background-color: rgba(255, 255, 255, 0.075);
-            }
-
-            ul.icons li a:active {
-                background-color: rgba(255, 255, 255, 0.175);
-            }
-
-            h2 {
-                font-size: 1.5rem;
-                line-height: 1.4;
-                letter-spacing: 0.5rem;
-            }           
-
-            ul.actions {
-                display: -moz-flex;
-                display: -webkit-flex;
-                display: -ms-flex;
-                display: flex;
-                cursor: default;
-                list-style: none;
-                margin-left: -1rem;
-                padding-left: 0;
-            }
-        
-                ul.actions li {
-                    padding: 0 0 0 1rem;
-                    vertical-align: middle;
-                }
-        
-                ul.actions.special {
-                    -moz-justify-content: center;
-                    -webkit-justify-content: center;
-                    -ms-justify-content: center;
-                    justify-content: center;
-                    width: 100%;
-                    margin-left: 0;
-                }
-        
-                    ul.actions.special li:first-child {
-                        padding-left: 0;
-                    }
-        
-                ul.actions.stacked {
-                    -moz-flex-direction: column;
-                    -webkit-flex-direction: column;
-                    -ms-flex-direction: column;
-                    flex-direction: column;
-                    margin-left: 0;
-                }
-        
-                    ul.actions.stacked li {
-                        padding: 1.3rem 0 0 0;
-                    }
-        
-                        ul.actions.stacked li:first-child {
-                            padding-top: 0;
-                        }
-        
-                ul.actions.fit {
-                    width: calc(100% + 1rem);
-                }
-        
-                    ul.actions.fit li {
-                        -moz-flex-grow: 1;
-                        -webkit-flex-grow: 1;
-                        -ms-flex-grow: 1;
-                        flex-grow: 1;
-                        -moz-flex-shrink: 1;
-                        -webkit-flex-shrink: 1;
-                        -ms-flex-shrink: 1;
-                        flex-shrink: 1;
-                        width: 100%;
-                    }
-        
-                        ul.actions.fit li > * {
-                            width: 100%;
-                        }
-        
-                    ul.actions.fit.stacked {
-                        width: 100%;
-                    }
-        
-                @media screen and (max-width: 480px) {
-        
-                    ul.actions:not(.fixed) {
-                        -moz-flex-direction: column;
-                        -webkit-flex-direction: column;
-                        -ms-flex-direction: column;
-                        flex-direction: column;
-                        margin-left: 0;
-                        width: 100% !important;
-                    }
-        
-                        ul.actions:not(.fixed) li {
-                            -moz-flex-grow: 1;
-                            -webkit-flex-grow: 1;
-                            -ms-flex-grow: 1;
-                            flex-grow: 1;
-                            -moz-flex-shrink: 1;
-                            -webkit-flex-shrink: 1;
-                            -ms-flex-shrink: 1;
-                            flex-shrink: 1;
-                            padding: 1rem 0 0 0;
-                            text-align: center;
-                            width: 100%;
-                        }
-        
-                            ul.actions:not(.fixed) li > * {
-                                width: 100%;
-                            }
-        
-                            ul.actions:not(.fixed) li:first-child {
-                                padding-top: 0;
-                            }
-        
-                            ul.actions:not(.fixed) li input[type="submit"],
-                            ul.actions:not(.fixed) li input[type="reset"],
-                            ul.actions:not(.fixed) li input[type="button"],
-                            ul.actions:not(.fixed) li button,
-                            ul.actions:not(.fixed) li .button {
-                                width: 100%;
-                            }
-        
-                                ul.actions:not(.fixed) li input[type="submit"].icon:before,
-                                ul.actions:not(.fixed) li input[type="reset"].icon:before,
-                                ul.actions:not(.fixed) li input[type="button"].icon:before,
-                                ul.actions:not(.fixed) li button.icon:before,
-                                ul.actions:not(.fixed) li .button.icon:before {
-                                    margin-left: -0.5em;
-                                }
-        
-                }
-        

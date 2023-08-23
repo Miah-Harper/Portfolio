@@ -1,65 +1,65 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-     <link rel="stylesheet" href="form.css"> 
-     <script src="form.css"></script> 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="form.css"> <!-- Link to your stylesheet -->
+</head>
+<body>
+  
     <!-- navbar -->
 <nav class="navbar">
-    <ul class="link-group">
-        <li class="link active"><a href="index.html">home</a></li>
-        <li class="link"><a href="projects.html">projects</a></li>
-        <li class="link"><a href="aboutme.html">about</a></li>
-        <li class="link"><a href="contact.html">contact</a></li>
-    </ul>
-</nav>
-
-    <!---modify this form HTML and place wherever you want your form-->
-    <!-- <form action="https://formspree.io/f/mnqkpzzv" method="POST">
-      <label>
-        Your email:
-        <input type="email" name="email" class="email-address"/>
-      </label>
-      <label>
-        Your message:
-        <textarea name="message"></textarea>
-      </label>  -->
-      <!-- your other form fields go here -->
-     <!-- <button type="submit">Send</button> -->
+  <ul class="link-group">
       
-    <!-- </form>  -->
-        <!-- Contact -->
-				<article id="contact">
-					<h2 class="major">Contact</h2>
-					<form action="https://formspree.io/f/xeqbaeqa"
-						  method="post">
-						<div class="fields">
-							<div class="field half">
-								<label for="name">Name</label>
-								<input type="text" name="name" id="name" />
-							</div>
-							<div class="field half">
-								<label for="email">Email</label>
-								<input type="text" name="email" id="email" />
-							</div>
-							<div class="field">
-								<label for="message">Message</label>
-								<textarea name="message" id="message" rows="4"></textarea>
-							</div>
-						</div>
-						<ul class="actions">
-							<li><input type="submit" value="Send Message" class="primary" /></li>
-							<li><input type="reset" value="Reset" /></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/robert-e-rogers-the2nd/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/rerogers2" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</form>
-				</article>
-  </body>
-</html>
+      
+      <li class="link"><a href="aboutme.html">home</a></li>
+      <li class="link"><a href="projects.html">projects</a></li>
+      <li class="link"><a href="contact.html">contact</a></li>
+  </ul>
+  
+  <div class="flex items-center min-h-screen bg-gray-50 dark:bg-gray-900">
+  <div class="container mx-auto">
+    <div class="max-w-md mx-auto my-10 bg-white p-5 rounded-md shadow-sm">
+      <div class="text-center">
+        <h1 class="my-3 text-3xl font-semibold text-gray-700 dark:text-gray-200">
+          Contact Me
+        </h1>
+        <p class="text-gray-400 dark:text-gray-400">
+         
+        </p>
+      </div>
+      <div class="m-7">
+        <form action="https://api.web3forms.com/submit" method="POST" id="form">
+          <input type="hidden" name="access_key" value="56d24bba-de3d-4d44-8e17-836504946a4e" />
+          <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+          <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+          <input type="checkbox" name="botcheck" id="" style="display: none;" />
+          <div class="mb-6">
+            <label for="name" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Full Name</label>
+            <input type="text" name="name" id="name" placeholder="John Doe" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+          </div>
+          <div class="mb-6">
+            <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Email Address</label>
+            <input type="email" name="email" id="email" placeholder="you@company.com" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+          </div>
+
+          <div class="mb-6">
+            <label for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Your Message</label>
+
+            <textarea rows="5" name="message" id="message" placeholder="Your Message" class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" required></textarea>
+          </div>
+          <div class="mb-6">
+            <button type="submit" class="w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none">
+              Send Message
+            </button>
+          </div>
+          <p class="text-base text-center text-gray-400" id="result"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</body>

@@ -58,11 +58,10 @@ body {
     background-color: transparent;
 }
 
-.centered-container img {
-    max-width: 50%; /* Ensure the image doesn't exceed its container width */
-    height: auto; /* Maintain the image's aspect ratio */
-    display: block; /* Remove any extra space below the image */
-    margin: 0 auto; /* Center the image horizontally */
+.centered-content img {
+    max-width: 50%;
+    max-height: 5%;
+    display: inline-block; /* Ensure the image is treated as an inline block element */
     border-radius: 15%;
 }
 .centered-content {

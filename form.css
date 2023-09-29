@@ -5,7 +5,7 @@ body {
   background-image: url('/images/wallpaper.png');
   background-size:cover;
   background-repeat:no-repeat;
-  object-fit:contain;
+  
   color:white;
 }
 
@@ -58,7 +58,7 @@ input[type="submit"]:hover {
 }
 
 .link a{
-  color: #fff;
+  color: #f7f2f2;
   opacity: 0.5;
   text-decoration: none;
   text-transform: capitalize;

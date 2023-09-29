@@ -1,23 +1,26 @@
-*{
+/* Common styles for all screen sizes */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     width: 100%;
     max-width: 1400px;
-    display: block;
     margin: auto;
     min-height: 100vh;
     background: #191919;
     font-family: sans-serif;
-    background-image: url('images/wallpaper.jpg');
+    background-image: url('images/wallpaper2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Ensure background image doesn't scroll */
+    color: white;
 }
 
-
-
-.navbar{
+/* Navbar styles */
+.navbar {
     width: 100%;
     position: fixed;
     top: 0;
@@ -29,12 +32,12 @@ body{
     background: #1a1a1a;
 }
 
-.link-group{
+.link-group {
     list-style: none;
     display: flex;
 }
 
-.link a{
+.link a {
     color: #fff;
     opacity: 0.5;
     text-decoration: none;
@@ -46,266 +49,85 @@ body{
     font-size: 20px;
 }
 
-.link a:hover, .link.active a{
+.link a:hover,
+.link.active a {
     opacity: 1;
 }
 
-
-.home-section{
-    width: 100%;
-    height: 100vh;
-    padding: 0 150px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    top: 0;
-    opacity: 0;
-    transition: 1s;
+/* Project section styles */
+.project-section {
+    padding: 150px 20px; /* Adjust padding for smaller screens */
 }
 
-.hero-heading{
-    color: #fff;
-    font-size: 20px;
-    text-transform: capitalize;
-    font-weight: 100;
-    font-family: 'Courier New', Courier, monospace;
-    
-}
-
-.home-img{
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 90vh;
-    width: 50%;
-    object-fit: cover;
-    opacity: 0.5;
-    border-radius: 50%;
-
-}
-
-.home-section{
-    /* previous styles */
-    position: fixed;
-}
-
-.home-section.active,
-.project-section.active,
-.about-section.active,
-.contact-section.active{
-    position: relative;
-    opacity: 1;
-    z-index: 8;
-}
-
-project-section
-
-.project-section-active{
-    width: 100%;
-    min-height: 100vh;
-    padding: 150px 100px 100px;
-    position: fixed;
-    top: 0;
-    transition: 1s;
-    opacity: 0;
-}
-
-.project-heading{
-    font-size: 50px;
-    background: #252525;
-    text-transform: capitalize;
+.project-heading {
+    font-size: 40px; /* Reduce font size for smaller screens */
     text-align: center;
-    margin-bottom: 50px;
-    color:antiquewhite;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-stroke: 8px transparent;
+    margin-bottom: 30px;
 }
 
-.project-container{
+.project-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 100px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    grid-gap: 20px; /* Adjust grid gap for smaller screens */
 }
 
-.project-card{
-    height: 400px;
-    position: relative;
+.project-card {
+    height: auto; /* Let the height adjust to content */
 }
 
-.project-img{
+.project-img {
     width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+    height: auto; /* Maintain aspect ratio */
     object-fit: cover;
     transition: .5s;
 }
 
-.project-content{
-    position: relative;
-    padding: 40px;
-    color: #070707;
+.project-content {
+    padding: 20px;
+    color: #fcfafa;
     transition: .5s;
     opacity: 0.5;
 }
 
-.project-title{
-    font-size: 50px;
+.project-title {
+    font-size: 30px; /* Reduce font size for smaller screens */
     text-transform: capitalize;
     text-align: center;
     font-weight: 300;
 }
 
-.project-info{
-    margin: 40px;
-    font-size: 20px;
-    line-height: 30px;
+.project-info {
+    font-size: 18px; /* Reduce font size for smaller screens */
+    line-height: 24px; /* Adjust line height for readability on smaller screens */
     text-align: center;
-    
 }
 
-.project-btn-grp{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+.project-btn-grp {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    margin-top: 20px; /* Add some space for smaller screens */
 }
 
-.project-btn{
+.project-btn {
     height: 40px;
     text-transform: capitalize;
-    font-size: 18px;
+    font-size: 16px; /* Reduce font size for smaller screens */
     border: none;
     background: #000;
     color: #fff;
     cursor: pointer;
+    margin: 0 10px; /* Adjust margin for smaller screens */
 }
 
-.project-btn.live{
+.project-btn.live {
     background: none;
     border: 2px solid #fff;
 }
 
-.project-card:hover .project-img{
+.project-card:hover .project-img {
     filter: blur(20px);
 }
 
-.project-card:hover .project-content{
-    opacity: 2;
-    
+.project-card:hover .project-content {
+    opacity: 1;
 }
-
-/* about-section */
-
-.about-section{
-    width: 100%;
-    min-height: 100vh;
-    padding: 150px 100px 0;
-    position: fixed;
-    top: 0;
-    opacity: 0;
-    transition: 1s;
-}
-
-.about{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 30% 65%;
-    grid-gap: 40px;
-}
-
-.about-img-container{
-    position: relative;
-}
-
-.about-info{
-    color: #fff;
-    opacity: 0.6;
-    font-size: 20px;
-    line-height: 40px;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.about-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-}
-
-.download-cv-btn{
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px 20px;
-    color: #fff;
-    border: none;
-    font-size: 16px;
-    text-transform: capitalize;
-    cursor: pointer;
-    transition: .5s;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.download-cv-btn:hover{
-    background: #000;
-}
-
-/* about-section */
-
-.about-section{
-    width: 100%;
-    min-height: 100vh;
-    padding: 150px 100px 0;
-    position: fixed;
-    top: 0;
-    opacity: 0;
-    transition: 1s;
-}
-
-.about{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 30% 65%;
-    grid-gap: 40px;
-}
-
-.about-img-container{
-    position: relative;
-}
-
-.about-info{
-    color: #fff;
-    opacity: 0.6;
-    font-size: 20px;
-    line-height: 40px;
-}
-
-.about-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-}
-
-.download-cv-btn{
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px 20px;
-    color: #fff;
-    border: none;
-    font-size: 16px;
-    text-transform: capitalize;
-    cursor: pointer;
-    transition: .5s;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.download-cv-btn:hover{
-    background: #000;
-}
-

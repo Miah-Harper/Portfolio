@@ -2,34 +2,6 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial;
-    padding: 10px;
-    background-image: url('images/wallpaper.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0; /* Remove default margin */
-}
-
-/* Navbar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: transparent;
-    padding: 10px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
-.link-group {
-    list-style: none;
-    display: flex;
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-}
 
 .link {
     margin-right: 20px;
@@ -68,7 +40,7 @@ body {
     text-align: center; /* Center text horizontally within centered-content */
     max-width: 800px; /* Adjust max-width as needed */
 }
-/* Right Column (About Me) */
+/*Right Column (About Me) */
 .rightcolumn {
     float: left;
     width: 100%; /* Full width on mobile */
@@ -79,10 +51,10 @@ body {
 .card.about-right {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
     background-color: transparent; /* Optional: Remove background color */
 }
 .about-para {

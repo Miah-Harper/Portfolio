@@ -1,13 +1,4 @@
-/* Default styles for larger screens */
-body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  background-image: url('images/backgroundpic2.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: white;
-}
+
 
 h1 {
   text-align: center;
@@ -22,7 +13,17 @@ form {
   border: 1px solid #ccc;
 }
 
+form, .form-container {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background: transparent; 
+}
 
+.page-wrapper{
+    margin-top: 200px;
+    justify-content: flex-start;
+}
 
 input {
   width: 100%;
@@ -71,6 +72,7 @@ input[type="submit"]:hover {
   line-height: 80px;
   transition: .5s;
   font-size: 20px;
+  padding-top: 80px;
 }
 
 .link a:hover, .link.active a{

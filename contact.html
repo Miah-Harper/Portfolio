@@ -5,24 +5,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conact Me</title>
-    <link rel="stylesheet" href="form.css"> <!-- Link to your stylesheet -->
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="contact.css"> 
+    <link rel="stylesheet" href="/global.css">
 </head>
 
   
     <!-- navbar -->
-<nav class="navbar">
-  <ul class="link-group">
+    <nav class="navbar">
+    <ul class="link-group">
       
       
       <li class="link"><a href="index.html">home</a></li>
       <li class="link"><a href="projects.html">projects</a></li>
       <li class="link"><a href="contact.html">contact</a></li>
-  </ul>
-  
-  <div class="flex items-center min-h-screen bg-gray-50 dark:bg-gray-900">
-  <div class="container mx-auto">
-    <div class="max-w-md mx-auto my-10 bg-white p-5 rounded-md shadow-sm">
+    </ul>
+    </nav>
+    <main class="page-wrapper">
+    <div class="flex items-center min-h-screen bg-gray-50 dark:bg-gray-900">
+    <!-- <div class="container mx-auto"> -->
+    <div class="contact-form-wrapper max-w-md my-10 bg-white p-5 rounded-md shadow-sm">
       <div class="text-center">
         <h1 class="my-3 text-3xl font-semibold text-gray-700 dark:text-gray-200">
           Contact Me
@@ -31,6 +33,7 @@
          
         </p>
       </div>
+      </main>
       <div class="m-7">
         <form action="https://api.web3forms.com/submit" method="POST" id="form">
           <input type="hidden" name="access_key" value="56d24bba-de3d-4d44-8e17-836504946a4e" />

@@ -17,7 +17,7 @@
 
 .project-card {
     height: auto; /* Let the height adjust to content */
-    max-width: 500px;
+    
 }
 
 .project-img {
@@ -25,6 +25,8 @@
     height: auto; /* Maintain aspect ratio */
     object-fit: cover;
     transition: .5s;
+    max-width: 500px;
+    height: auto;
 }
 
 .project-content {

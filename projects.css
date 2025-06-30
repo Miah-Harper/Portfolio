@@ -69,7 +69,7 @@
 }
 
 .project-card:hover .project-img {
-    filter: blur(20px);
+    transform: scale(1.1);
 }
 
 .project-card:hover .project-content {
